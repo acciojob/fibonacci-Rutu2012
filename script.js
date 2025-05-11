@@ -8,9 +8,9 @@ function fibonacci(num) {
         temp = a + b;
         a = b;
         b = temp;
+		console.log(fibonacci(5));
     }
     return a;
 
 }
 
-module.exports = fibonacci;
