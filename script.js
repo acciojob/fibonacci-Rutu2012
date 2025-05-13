@@ -1,16 +1,15 @@
-function fibonacci(num) {
+fibanocii    function fibonacci(num) {
     if (num === 0) return 0;
     if (num === 1) return 0;
     if (num === 2) return 1;
 
-    let a = 0, b = 1, temp;
-    for (let i = 2; i < num; i++) {
-        temp = a + b;
+    let a = 0, b = 1, c;
+    for (let i = 3; i <= num; i++) {
+        c = a + b;
         a = b;
-        b = temp;
-		console.log(fibonacci(5));
+        b = c;
     }
-    return a;
-
+    return b;
 }
 
+module.exports = fibonacci;
